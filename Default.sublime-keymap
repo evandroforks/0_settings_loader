@@ -760,7 +760,11 @@
 
 	{ "keys": ["ctrl+shift+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
 
-	{ "keys": ["alt+q"], "command": "wrap_lines" },
+	{ "keys": ["alt+q"], "command": "wrap_lines", "context":
+		[
+			{ "key": "setting.is_widget", "operator": "equal", "operand": false }
+		]
+	},
 
 	{ "keys": ["ctrl+k", "ctrl+u"], "command": "upper_case" },
 	{ "keys": ["ctrl+k", "ctrl+l"], "command": "lower_case" },
@@ -813,7 +817,7 @@
 			{ "key": "setting.is_widget", "operator": "equal", "operand": true }
 		]
 	},
-	{ "keys": ["alt+w"], "command": "toggle_whole_word", "context":
+	{ "keys": ["alt+q"], "command": "toggle_whole_word", "context":
 		[
 			{ "key": "setting.is_widget", "operator": "equal", "operand": true }
 		]
