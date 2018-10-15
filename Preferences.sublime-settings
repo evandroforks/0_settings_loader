@@ -346,6 +346,9 @@
     // Allows tabs to scroll left and right, instead of simply shrinking
     "enable_tab_scrolling": true,
 
+    // Restores the `output.exec` panel view cursor and scroll position after building a project
+    "restore_output_view_scroll": false,
+
     // Display file encoding in the status bar
     "show_encoding": true,
 
