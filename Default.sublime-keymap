@@ -418,13 +418,13 @@
 	// { "keys": ["ctrl+f7"], "command": "cancel_build" },
 	// { "keys": ["ctrl+f7"], "command": "exec", "args": {"kill": true} },
 
-	{ "keys": ["f7"], "command": "build" },
-	{ "keys": ["ctrl+b"], "command": "build" },
+	{ "keys": ["f7"], "command": "fix_sublime_text_output_build" },
+	{ "keys": ["ctrl+b"], "command": "fix_sublime_text_output_build" },
 
 	{ "keys": ["f8"], "command": "show_panel", "args": {"panel": "output.exec"} },
 	{ "keys": ["f8"], "command": "cancel_build", "context": [{ "key": "panel", "operand": "output.exec" }] },
 
-	{ "keys": ["ctrl+shift+b"], "command": "build", "args": {"select": true} },
+	{ "keys": ["ctrl+shift+b"], "command": "fix_sublime_text_output_build", "args": {"select": true} },
 	{ "keys": ["ctrl+break"], "command": "cancel_build" },
 
 	{ "keys": ["ctrl+t"], "command": "transpose", "args": { "can_transpose_words": true } },
